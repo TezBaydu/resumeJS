@@ -17,7 +17,6 @@
     <script type="text/javascript">
         (function () {
             emailjs.init("user_jtbYcTDIFOX4Z8NAmbqq3");
-            emailjs.send("gmail", "testforcodepro2", {name: "Tezza", notes: "The project I want is..."});
         })();
     </script>
     <title>Rosie</title>
@@ -66,7 +65,7 @@
                 <h5 class="uppercase text-center">Let's work together!</h5>
 
                 <div class="center-form">
-                    <form>
+                    <form onsubmit="return sendMail(this);">
                         <input type="text" name="name" id="fullname" class="form-control" placeholder="Name" required />
                         <input type="email" name="email" id="emailaddress" class="form-control" placeholder="Email"
                             required />
@@ -146,6 +145,7 @@
             </div>
         </div>
     </footer>
+    <script src="assets/js/sendEmail.js"></script>
 </body>
 
 </html>
